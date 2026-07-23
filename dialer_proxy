@@ -1,0 +1,11 @@
+[YAML]
+
+proxies+:
+  - {name: Cliproxy-新加坡, type: socks5, server: 205.156.159.32, port: 443, username: "CyDMWuaDdsTS", password: "ZHPr9tkmCb", udp: true, dialer-proxy: 链式-前置}
+
+proxy-groups*:
+  where:
+    name: 链式-落地
+  set:
+    proxies+:
+      - Cliproxy-新加坡
